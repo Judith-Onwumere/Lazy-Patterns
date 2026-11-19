@@ -62,7 +62,7 @@ body{background:var(--bg)}header{display:none}.wrap{padding:0;max-width:640px}ma
 .pc.c{display:flex;gap:12px;justify-content:space-between;min-height:150px}.pc.c .tx{display:flex;flex-direction:column;flex:1;min-width:0}.pc.c h3{font-size:18px;margin:2px 0 6px}.pc.c p{margin:0;font-size:16px}.pc.c .bd{margin-top:auto;align-self:flex-start}.pc.c img{width:120px;height:136px;object-fit:cover;border-radius:14px;flex:none}
 .bd{background:var(--pink);border-radius:8px;padding:2px 9px;font-size:13px;display:inline-block}
 .pgd{columns:2;column-gap:12px}.pc.g{break-inside:avoid;padding:12px}.pc.g img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:12px;margin-bottom:8px}.pc.g h3{font-size:15px;margin:0 0 4px}.pc.g p{margin:0 0 8px;font-size:14px}
-.pl{background:var(--cream);border-radius:20px;box-shadow:0 2px 6px #0001;overflow:hidden}.li{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 14px;cursor:pointer}.li+.li{border-top:1px solid var(--bg)}.li h3{font-size:16px;margin:0 0 4px}.li .mt{display:flex;gap:8px;align-items:center;font-size:13px}.li img{width:40px;height:40px;border-radius:8px;object-fit:cover}
+.pl{background:var(--cream);border-radius:20px;box-shadow:0 2px 6px #0001;overflow:hidden}.li{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 14px;cursor:pointer}.li+.li{border-top:1px solid var(--bg)}.li h3{font-size:16px;margin:0 0 4px}.li .mt{display:flex;gap:8px;align-items:center;font-size:13px}.li img{width:72px;height:72px;border-radius:12px;object-fit:cover;flex:none}
 .bar2{position:fixed;left:50%;transform:translateX(-50%);bottom:16px;width:min(608px,calc(100% - 32px));display:flex;gap:12px;z-index:5}.sp{flex:1;display:flex;align-items:center;gap:10px;background:var(--surf);border-radius:24px;padding:0 16px;height:48px;box-shadow:0 4px 14px #0002;color:#888;margin:0}.sp input{border:0;outline:0;background:transparent;padding:0;font:inherit;font-size:17px;width:100%;color:var(--ink)}.sp input:focus{outline:0;border:0}
 .emp{text-align:center;padding:60px 10px;color:var(--ink);font-size:19px}.ov{position:fixed;inset:0;z-index:10}.pop{position:absolute;top:58px;background:var(--surf);border-radius:18px;box-shadow:0 8px 24px #0003;padding:8px;min-width:200px;z-index:20}.pop.r{right:0}.pop.l{left:0}.pi{display:flex;gap:14px;align-items:center;padding:12px 16px;border-radius:12px;cursor:pointer;font-size:17px}.pi:hover{background:var(--bg)}.pi.cur{background:var(--pink)}
 .vh{position:fixed;left:-9999px;top:0;width:1px;height:1px;overflow:hidden;opacity:0}
@@ -141,7 +141,7 @@ nav{align-self:stretch;width:100%}nav .tb{width:100%;flex:none}
 .cv2{flex:1;display:flex;flex-direction:column;min-height:0}.cvp2{flex:1;background:var(--pink) center/cover}.cvb{flex:none;text-align:center;padding:2.2cqw 4cqw 2.4cqw;background-color:var(--cream);display:flex;flex-direction:column;gap:.4cqw}.cvb b{font-family:var(--hd);font-weight:400;font-size:6.6cqw;line-height:1.1;color:#1c1917}.cvb span{font-size:2.8cqw;color:var(--deep)}
 .dtl h2{font-size:1.6em}.dtl .dt{padding:2cqw 0}
 .bds{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}.pc.c .bds{margin-top:auto;padding-top:8px}.pc.c .bds .bd{margin-top:0}.pc p.tg,.li .tg{font-size:14px;opacity:.7;margin:0 0 6px}.li .tg{margin:0 0 6px}
-@media(min-width:768px){.li{min-height:120px;padding:22px 26px;gap:18px}.li h3{font-size:23px}.li img{width:88px;height:88px;border-radius:14px}.li .mt{font-size:16px;gap:10px;flex-wrap:wrap}.pc p.tg,.li .tg{font-size:17px}.bd{font-size:14px;padding:3px 11px}}
+@media(min-width:768px){.li{min-height:120px;padding:22px 26px;gap:18px}.li h3{font-size:23px}.li img{width:128px;height:128px;border-radius:16px}.li .mt{font-size:16px;gap:10px;flex-wrap:wrap}.pc p.tg,.li .tg{font-size:17px}.bd{font-size:14px;padding:3px 11px}}
 .dnm{font-size:13px;margin:0 0 6px;opacity:.85}.stl{font-size:11px;opacity:.65;align-self:center}
 body:not(.home).kb .bar2{display:none}.kb main{padding-bottom:40px}
 .thr{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0}.tm{position:relative}.tm img{height:76px;border-radius:10px;display:block;border:1px solid var(--pink)}.tm .x{position:absolute;top:-8px;right:-8px;width:26px;height:26px;border-radius:50%;padding:0;background:#e60000;color:#fff;font-size:12px;box-shadow:none;display:grid;place-items:center}
@@ -211,7 +211,7 @@ const vm=D.vm||'card';return g.map(([k,a])=>`<h4 class="mh">${k}</h4>`+(vm=='lis
 let cbk=null;
 function ask(m,label,fn){cbk=fn;const o=$('#phs');o.innerHTML=`<div class="sh" data-a="pnone"><b>${esc(m)}</b><button class="rd" data-a="cok">${IC.del} ${label}</button><button data-a="pcancel">Cancel</button></div>`;o.hidden=false}
 function askDel(id){const p=D.list.find(x=>x.id==id);if(p)ask('Delete “'+(p.title||'Untitled pattern')+'”? This can’t be undone.','Delete pattern',()=>{D.list=D.list.filter(x=>x!=p);if(P==p)P=null;save();render();toast('Pattern deleted')})}
-function home(){const vm=D.vm||'card',pop=pm=='menu'?`<div class="ov" data-a="pm0"></div><div class="pop l"><div class="pi" data-a="pmt">${IC.palette}Theme</div><div class="pi" data-a="dm">${IC.moon}${isDark()?'Light mode':'Dark mode'}</div>${ip?`<div class="pi" data-a="inst">${IC.up}Install app</div>`:''}<div class="pi" data-a="imp">${IC.up}Import a pattern</div><div class="pi" data-a="exportall">${IC.exp}Export all patterns</div></div>`:pm=='view'?`<div class="ov" data-a="pm0"></div><div class="pop r">${[['list','List view'],['grid','Grid view'],['card','Card view']].map(([v,n])=>`<div class="pi ${vm==v?'cur':''}" data-a="vm" data-v="${v}">${IC[v]}${n}</div>`).join('')}</div>`:pm=='theme'?`<div class="ov" data-a="pm0"></div><div class="pop l" style="min-width:240px">${themes()}</div>`:'';
+function home(){const vm=D.vm||'card',pop=pm=='menu'?`<div class="ov" data-a="pm0"></div><div class="pop l"><div class="pi" data-a="pmt">${IC.palette}Theme</div><div class="pi" data-a="pma">${IC.moon}Appearance: ${({light:'Light',dark:'Dark'})[D.dm]||'System'}</div>${ip?`<div class="pi" data-a="inst">${IC.up}Install app</div>`:''}<div class="pi" data-a="imp">${IC.up}Import a pattern</div><div class="pi" data-a="exportall">${IC.exp}Export all patterns</div></div>`:pm=='view'?`<div class="ov" data-a="pm0"></div><div class="pop r">${[['list','List view'],['grid','Grid view'],['card','Card view']].map(([v,n])=>`<div class="pi ${vm==v?'cur':''}" data-a="vm" data-v="${v}">${IC[v]}${n}</div>`).join('')}</div>`:pm=='theme'?`<div class="ov" data-a="pm0"></div><div class="pop l" style="min-width:240px">${themes()}</div>`:pm=='appr'?`<div class="ov" data-a="pm0"></div><div class="pop l" style="min-width:230px">${[['system','System'],['light','Light'],['dark','Dark']].map(([v,n])=>`<div class="pi ${(D.dm||'system')==v?'cur':''}" data-a="ds" data-v="${v}">${n}${(D.dm||'system')==v?' ✓':''}</div>`).join('')}</div>`:'';
 return `<div class="hm"><div class="tb"><button class="cb" data-a="pmm" title="Menu">${IC.side}</button>${LOGO}<button class="cb" data-a="pmv" title="Change view">${IC[vm]}</button>${pop}</div><h1>Patterns</h1><div id="plist">${plist()}</div></div><div class="bar2"><label class="sp">${IC.search}<input id="q" value="${esc(q)}" placeholder="Search patterns" autocomplete="off"></label><button class="cb" data-a="new" title="New pattern">${IC.plus}</button></div>`}
 const fld=(l,k,ph='',hp='')=>`<label>${l}</label>${hp?`<p class="help">${hp}</p>`:''}<input data-p="${k}" value="${esc(P[k])}" placeholder="${ph}">`;
 const area=(l,k,ph='',hp='')=>`<label>${l}</label>${hp?`<p class="help">${hp}</p>`:''}<textarea data-p="${k}" placeholder="${ph}">${esc(P[k])}</textarea>`;
@@ -258,9 +258,18 @@ const AES=[{"k": "plain", "n": "Plain"}, {"k": "floral", "n": "Navy blooms", "i"
 const PAL=['#f9c6d4','#e8718f','#c0392b','#f2a33a','#ffe08a','#9bd18b','#3e7a3a','#6f8fe0','#3f5aa8','#a77fd9','#8b5a3c','#ffffff','#bdbdbd','#2b2b2b'];
 const HK=['2.0 mm','2.25 mm','2.5 mm','2.75 mm','3.0 mm','3.25 mm','3.5 mm','3.75 mm','4.0 mm','4.5 mm','5.0 mm','5.5 mm','6.0 mm','6.5 mm','7.0 mm','8.0 mm','9.0 mm','10.0 mm'];
 let MH=null;
-function chunkM(t,it){if(!MH){MH=document.createElement('div');MH.id='mh';MH.style.cssText='position:fixed;left:-9999px;top:0;width:540px;visibility:hidden;pointer-events:none';document.body.appendChild(MH)}MH.innerHTML=sheet({t,h:''},0);const body=MH.querySelector('.body'),out=[];let cur=[];const over=()=>{const mw=body.firstChild;return mw.offsetHeight>body.clientHeight*.96-4};it.forEach(x=>{cur.push(x);body.innerHTML='<div style="display:flow-root"><h2>'+esc(t)+'</h2>'+cur.map(y=>y.h).join('')+'</div>';if(over()&&cur.length>1){cur.pop();out.push(cur);cur=[x]}});if(cur.length)out.push(cur);return out}
+function chunkM(t,it){if(!MH){MH=document.createElement('div');MH.id='mh';MH.style.cssText='position:fixed;left:-9999px;top:0;width:540px;visibility:hidden;pointer-events:none';document.body.appendChild(MH)}MH.innerHTML=sheet({t,h:''},0);const body=MH.querySelector('.body'),out=[];let cur=[];
+const draw=a=>{body.innerHTML='<div style="display:flow-root"><h2>'+esc(t)+'</h2>'+a.map(y=>y.h).join('')+'</div>'};
+const over=()=>{const mw=body.firstChild;return mw.offsetHeight>body.clientHeight*.96-4};
+const piece=w=>({h:'<p>'+esc(w)+'</p>',s:w});
+for(const it0 of it){let x=it0;while(x){cur.push(x);draw(cur);if(!over()){x=null;break}cur.pop();
+if(x.s&&x.s.length>40){const ws=x.s.split(' ');let lo=0,hi=ws.length-1;while(lo<hi){const mid=Math.ceil((lo+hi)/2);draw([...cur,piece(ws.slice(0,mid).join(' '))]);if(over())hi=mid-1;else lo=mid}
+if(lo>0){cur.push(piece(ws.slice(0,lo).join(' ')));out.push(cur);cur=[];x=piece(ws.slice(lo).join(' '));continue}}
+if(!cur.length){cur.push(x);x=null;break}
+out.push(cur);cur=[]}}
+if(cur.length)out.push(cur);return out}
 function chunk(it,cap){const o=[];let c=[],w=0;it.forEach(i=>{if(w+i.w>cap&&c.length){o.push(c);c=[];w=0}c.push(i);w+=i.w});if(c.length)o.push(c);return o}
-const L=t=>String(t||'').split('\n').map(x=>({h:`<p>${esc(x)||'&nbsp;'}</p>`,w:1.2+Math.floor(x.length/50)}));
+const L=t=>String(t||'').split('\n').map(x=>({h:`<p>${esc(x)||'&nbsp;'}</p>`,s:x,w:1.2+Math.floor(x.length/50)}));
 function pages(){const dd=[['Title',P.title||'Untitled pattern'],['Tagline',P.sub],['Designer',P.designer],['Skill level',P.level]].filter(x=>x[1]),pg=[{cover:1},{t:'Details',h:dd.map(([k,v])=>`<div class="dt"><span>${k}</span><b>${esc(v)}</b></div>`).join('')},{t:'Contents',h:''}],toc=[];
 const add=(t,it,cap=22)=>{if(!it.length)return;toc.push([t,pg.length+1]);chunkM(t,it).forEach((c,i)=>pg.push({t:t+(i?' (cont.)':''),h:c.map(x=>x.h).join('')}))};
 add('Disclaimer',P.legal&&P.legal.trim()?L(P.legal):[]);add('Welcome',P.intro&&P.intro.trim()?L(P.intro):[]);
@@ -332,7 +341,8 @@ if(a=='open'){P=D.list.find(x=>x.id==d.id);D.cur=P.id;sec=LAST[d.id]||'cover';vi
 if(a=='delp')return askDel(d.id);
 if(a=='th'){if(e.target.tagName=='INPUT')return;D.th=d.k;return R()}
 if(a=='pmt'){pm='theme';return render()}
-if(a=='dm'){D.dm=isDark()?'light':'dark';pm='';save();return render()}
+if(a=='pma'){pm='appr';return render()}
+if(a=='ds'){D.dm=d.v;save();return render()}
 if(a=='inst'){pm='';if(ip){ip.prompt();ip=null}return render()}
 if(a=='new'){P=blank();D.list.push(P);D.cur=P.id;sec='cover';view='wiz';an=2;return R()}
 if(a=='export'){const x=new Blob([JSON.stringify(P)],{type:'application/json'}),l=document.createElement('a');l.href=URL.createObjectURL(x);l.download=(P.title||'pattern').replace(/\W+/g,'-').toLowerCase()+'.pattern.json';l.click();return toast('Pattern exported ✨')}
